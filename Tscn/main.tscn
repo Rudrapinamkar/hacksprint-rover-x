@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cm00j8m05wo1t" path="res://Tscn/backgorund.tscn" id="4_htlq0"]
 
 [node name="main" type="Node2D" unique_id=858370873]
+position = Vector2(9, 0)
 
 [node name="Backgorund" parent="." unique_id=1010888159 instance=ExtResource("4_htlq0")]
 
