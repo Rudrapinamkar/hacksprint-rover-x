@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bw32ivduco85o" path="res://Tscn/Backgorund.png" id="1_omwni"]
 
 [node name="level" type="StaticBody2D" unique_id=341777473]
-position = Vector2(-3, 49)
+position = Vector2(-3, -3)
 
 [node name="Backgorund" type="Sprite2D" parent="." unique_id=16145146]
 texture_filter = 1
