@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cm00j8m05wo1t"]
+
+[ext_resource type="Texture2D" uid="uid://dhrwt12o2pywe" path="res://Enviroment/Gemini_Generated_Image_tqkycltqkycltqky.png" id="1_df8jh"]
+
+[node name="Backgorund" type="Parallax2D" unique_id=1010888159]
+scroll_scale = Vector2(0.1, 0.1)
+scroll_offset = Vector2(0.1, 0)
+
+[node name="GeminiGeneratedImageH8f7Luh8f7Luh8f7" type="Sprite2D" parent="." unique_id=1270233171]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(986.39996, 539)
+scale = Vector2(1.451308, 1.3932292)
+texture = ExtResource("1_df8jh")

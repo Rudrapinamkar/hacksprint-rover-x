@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bmy6ws8pm1kel"]
+
+[ext_resource type="PackedScene" uid="uid://f3p8q3reggdf" path="res://Tscn/level.tscn" id="1_ixdg0"]
+[ext_resource type="PackedScene" uid="uid://cptdx1m2b5igr" path="res://node_2d.tscn" id="2_sgjnq"]
+[ext_resource type="PackedScene" uid="uid://dojqept2dxvpx" path="res://Tscn/draw.tscn" id="3_sgjnq"]
+[ext_resource type="PackedScene" uid="uid://cm00j8m05wo1t" path="res://Tscn/backgorund.tscn" id="4_htlq0"]
+
+[node name="main" type="Node2D" unique_id=858370873]
+
+[node name="Backgorund" parent="." unique_id=1010888159 instance=ExtResource("4_htlq0")]
+
+[node name="level" parent="." unique_id=1695662959 instance=ExtResource("1_ixdg0")]
+
+[node name="Rover" parent="." unique_id=1896106237 instance=ExtResource("2_sgjnq")]
+
+[node name="Camera2D" type="Camera2D" parent="Rover" unique_id=1589607663]
+position = Vector2(457, 445)
+zoom = Vector2(2, 2)
+limit_left = 0
+limit_top = 0
+limit_right = 1980
+limit_bottom = 1080
+
+[node name="Draw" parent="." unique_id=1349148927 instance=ExtResource("3_sgjnq")]
+position = Vector2(2, 5)

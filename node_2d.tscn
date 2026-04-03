@@ -1,9 +1,34 @@
 [gd_scene format=3 uid="uid://cptdx1m2b5igr"]
 
-[ext_resource type="Texture2D" uid="uid://8p6ldcvcabib" path="res://icon.svg" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://bn2uwtjsgmfpq" path="res://1rover.png" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://cdsga0ojnjlen" path="res://Tscn/wheels.tscn" id="2_0e48y"]
 
-[node name="Node2D" type="CharacterBody2D" unique_id=1896106237]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(52, 30)
 
-[node name="Icon" type="Sprite2D" parent="." unique_id=1843524221]
-position = Vector2(207, 293)
+[node name="Rover" type="RigidBody2D" unique_id=1229251134 groups=["player"]]
+
+[node name="PinJoint2D" type="PinJoint2D" parent="." unique_id=1787300907]
+position = Vector2(436, 465)
+node_a = NodePath("..")
+node_b = NodePath("Wheels")
+softness = 2.17
+
+[node name="Wheels" parent="PinJoint2D" unique_id=371370446 groups=["wheels"] instance=ExtResource("2_0e48y")]
+
+[node name="PinJoint2D2" type="PinJoint2D" parent="." unique_id=1654431001]
+position = Vector2(473, 465)
+node_a = NodePath("..")
+node_b = NodePath("Wheels")
+softness = 2.15
+
+[node name="Wheels" parent="PinJoint2D2" unique_id=2110242911 groups=["wheels"] instance=ExtResource("2_0e48y")]
+
+[node name="1Rover" type="Sprite2D" parent="." unique_id=1358095840]
+texture_filter = 1
+position = Vector2(458, 443)
 texture = ExtResource("1_wtcfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1683384718]
+position = Vector2(453, 447)
+shape = SubResource("RectangleShape2D_0e48y")
