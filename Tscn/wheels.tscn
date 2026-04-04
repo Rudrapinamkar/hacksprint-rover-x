@@ -4,14 +4,14 @@
 [ext_resource type="Script" uid="uid://bp0cg6uer7g3f" path="res://Tscn/wheels.gd" id="1_rb6m1"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jxlkh"]
-radius = 12.0
+radius = 23.021729
 
 [node name="Wheels" type="RigidBody2D" unique_id=2110242911 groups=["player"]]
 script = ExtResource("1_rb6m1")
 
 [node name="Wheel" type="Sprite2D" parent="." unique_id=536584560 groups=["wheels"]]
-position = Vector2(-2.3841858e-07, 5.364418e-07)
-scale = Vector2(0.18261717, 0.18750001)
+position = Vector2(0, -9.536743e-07)
+scale = Vector2(0.34912106, 0.35845593)
 texture = ExtResource("1_jxlkh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=323998619]

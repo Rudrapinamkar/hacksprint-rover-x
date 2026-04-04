@@ -1,14 +1,22 @@
 [gd_scene format=3 uid="uid://cm00j8m05wo1t"]
 
-[ext_resource type="Texture2D" uid="uid://dhrwt12o2pywe" path="res://Enviroment/Gemini_Generated_Image_tqkycltqkycltqky.png" id="1_df8jh"]
+[ext_resource type="Texture2D" uid="uid://7pk0x11q1ea5" path="res://Enviroment/backgrounds/space.png" id="1_bqoj2"]
+[ext_resource type="Texture2D" uid="uid://c3maia0x42yd0" path="res://Enviroment/backgrounds/Earth.png" id="2_bqoj2"]
 
-[node name="Backgorund" type="Parallax2D" unique_id=1010888159]
+[node name="Backgorund" type="Node2D" unique_id=144487816]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=898918947]
 scroll_scale = Vector2(0.1, 0.1)
-scroll_offset = Vector2(0.1, 0)
+repeat_size = Vector2(1980, 0)
 
-[node name="GeminiGeneratedImageH8f7Luh8f7Luh8f7" type="Sprite2D" parent="." unique_id=1270233171]
+[node name="BackgroundSpace" type="Sprite2D" parent="Parallax2D" unique_id=512934562]
 texture_filter = 1
-texture_repeat = 2
-position = Vector2(986.39996, 539)
-scale = Vector2(1.451308, 1.3932292)
-texture = ExtResource("1_df8jh")
+position = Vector2(1031.6577, 531.31244)
+scale = Vector2(1.0761034, 1.0105325)
+texture = ExtResource("1_bqoj2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=627920356]
+texture_filter = 1
+position = Vector2(1526.8999, 572)
+scale = Vector2(23.795313, 23.795313)
+texture = ExtResource("2_bqoj2")

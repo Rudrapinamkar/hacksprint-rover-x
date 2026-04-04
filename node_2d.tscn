@@ -3,14 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://bn2uwtjsgmfpq" path="res://1rover.png" id="1_wtcfe"]
 [ext_resource type="PackedScene" uid="uid://cdsga0ojnjlen" path="res://Tscn/wheels.tscn" id="2_0e48y"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
-size = Vector2(52, 30)
-
 [node name="Rover" type="RigidBody2D" unique_id=1229251134 groups=["player"]]
 position = Vector2(0, 192)
 
 [node name="PinJoint2D" type="PinJoint2D" parent="." unique_id=1787300907]
-position = Vector2(435, 465)
+position = Vector2(446, 517)
 node_a = NodePath("..")
 node_b = NodePath("Wheels")
 softness = 2.17
@@ -18,7 +15,7 @@ softness = 2.17
 [node name="Wheels" parent="PinJoint2D" unique_id=371370446 groups=["wheels"] instance=ExtResource("2_0e48y")]
 
 [node name="PinJoint2D2" type="PinJoint2D" parent="." unique_id=1654431001]
-position = Vector2(472, 465)
+position = Vector2(526, 516)
 node_a = NodePath("..")
 node_b = NodePath("Wheels")
 softness = 2.15
@@ -27,9 +24,11 @@ softness = 2.15
 
 [node name="1Rover" type="Sprite2D" parent="." unique_id=1358095840]
 texture_filter = 1
-position = Vector2(458, 443)
+position = Vector2(493, 479)
+scale = Vector2(2.109375, 2.109375)
 texture = ExtResource("1_wtcfe")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1683384718]
-position = Vector2(452, 447)
-shape = SubResource("RectangleShape2D_0e48y")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=599175477]
+position = Vector2(493, 479)
+scale = Vector2(2.109375, 2.109375)
+polygon = PackedVector2Array(25, -28.5, 13.5, -32, 8, -32, 8, -31.3, 3.5, -29, 1, -29, 1, -19.6, 6, -17.7, 6, -16.8, -2, -21.2, -2, -23, -12.700001, -23, -20.7, -17, -23, -17, -23, -9.9, -21.7, -9, -32, -9, -32, 21.5, -31.9, 23, 21.8, 23, 25, 19.8, 25, -2.3999996, 19, -4.5, 19, -17.6, 25, -19.6)

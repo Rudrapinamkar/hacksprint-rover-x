@@ -11,12 +11,12 @@ position = Vector2(9, 0)
 [node name="Backgorund" parent="." unique_id=1010888159 instance=ExtResource("4_htlq0")]
 
 [node name="level" parent="." unique_id=1695662959 instance=ExtResource("1_ixdg0")]
+position = Vector2(0, 0)
 
 [node name="Rover" parent="." unique_id=1896106237 instance=ExtResource("2_sgjnq")]
 
 [node name="Camera2D" type="Camera2D" parent="Rover" unique_id=1589607663]
 position = Vector2(457, 445)
-zoom = Vector2(2, 2)
 limit_left = 0
 limit_top = 0
 limit_right = 1980
