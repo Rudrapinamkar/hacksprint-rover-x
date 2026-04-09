@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cm00j8m05wo1t"]
 
 [ext_resource type="Texture2D" uid="uid://7pk0x11q1ea5" path="res://Enviroment/backgrounds/space.png" id="1_bqoj2"]
-[ext_resource type="Texture2D" uid="uid://c3maia0x42yd0" path="res://Enviroment/backgrounds/Earth.png" id="2_bqoj2"]
+[ext_resource type="Texture2D" uid="uid://cvuitsa7donoi" path="res://Enviroment/backgrounds/Earh.new.png" id="2_bqoj2"]
 
 [node name="Backgorund" type="Node2D" unique_id=144487816]
 
@@ -17,6 +17,7 @@ texture = ExtResource("1_bqoj2")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=627920356]
 texture_filter = 1
-position = Vector2(1526.8999, 572)
-scale = Vector2(23.795313, 23.795313)
+position = Vector2(1482, 298)
+rotation = 3.1415927
+scale = Vector2(-1.4831483, -1.4831407)
 texture = ExtResource("2_bqoj2")
