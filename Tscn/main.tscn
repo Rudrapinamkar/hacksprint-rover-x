@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cptdx1m2b5igr" path="res://node_2d.tscn" id="2_sgjnq"]
 [ext_resource type="PackedScene" uid="uid://dojqept2dxvpx" path="res://Tscn/draw.tscn" id="3_sgjnq"]
 [ext_resource type="PackedScene" uid="uid://cm00j8m05wo1t" path="res://Tscn/backgorund.tscn" id="4_htlq0"]
+[ext_resource type="PackedScene" uid="uid://btv36ohi38qqy" path="res://collectables.tscn" id="5_43bi4"]
 
 [node name="main" type="Node2D" unique_id=858370873]
 position = Vector2(9, 0)
@@ -24,3 +25,6 @@ limit_bottom = 1080
 
 [node name="Draw" parent="." unique_id=1349148927 instance=ExtResource("3_sgjnq")]
 position = Vector2(2, 5)
+
+[node name="Collectables" parent="." unique_id=1579731740 instance=ExtResource("5_43bi4")]
+position = Vector2(778, 613)

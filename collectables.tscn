@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://btv36ohi38qqy"]
+
+[ext_resource type="Script" uid="uid://diqayqxl3tm4s" path="res://collectables.gd" id="1_47sf6"]
+[ext_resource type="Texture2D" uid="uid://bwfv48lmvrnpr" path="res://Enviroment/backgrounds/Data.old.png" id="1_npbb8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbs1"]
+size = Vector2(66, 73)
+
+[node name="Collectables" type="Node2D" unique_id=1579731740]
+script = ExtResource("1_47sf6")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=628293434]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=903733234]
+position = Vector2(41, 41.5)
+shape = SubResource("RectangleShape2D_4bbs1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1266965365]
+texture_filter = 1
+position = Vector2(52.75, 40.75)
+scale = Vector2(1.9765625, 1.6015625)
+texture = ExtResource("1_npbb8")
