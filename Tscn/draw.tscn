@@ -7,6 +7,8 @@ script = ExtResource("1_5j5tb")
 
 [node name="line" type="Line2D" parent="." unique_id=704168517]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1887522411]
+[node name="StaticBody2D" type="RigidBody2D" parent="." unique_id=1359320817]
+freeze = true
+freeze_mode = 1
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=87665129]
