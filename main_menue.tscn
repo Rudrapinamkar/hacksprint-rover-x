@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cupu2yqgq5ssm"]
+
+[ext_resource type="Script" uid="uid://cwcw0hg0fci0a" path="res://main_menue.gd" id="1_ms0q7"]
+[ext_resource type="Texture2D" uid="uid://7pk0x11q1ea5" path="res://Enviroment/backgrounds/space.png" id="2_6jjk0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ms0q7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6jjk0"]
+
+[node name="Main_menue" type="Node2D" unique_id=315850922]
+script = ExtResource("1_ms0q7")
+
+[node name="Space" type="Sprite2D" parent="." unique_id=1051168839]
+position = Vector2(983, 528)
+texture = ExtResource("2_6jjk0")
+
+[node name="Button" type="Button" parent="." unique_id=299128826]
+texture_filter = 1
+offset_left = 705.0
+offset_top = 468.0
+offset_right = 1178.0
+offset_bottom = 615.0
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxTexture_ms0q7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6jjk0")
+text = "Play"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

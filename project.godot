@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Hacksprint_Rover_X"
-run/main_scene="uid://bmy6ws8pm1kel"
+run/main_scene="uid://cupu2yqgq5ssm"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
