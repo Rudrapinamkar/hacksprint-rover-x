@@ -15,7 +15,10 @@ position = Vector2(9, 0)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1296739294]
 
 [node name="progress_bar" parent="CanvasLayer" unique_id=165627438 instance=ExtResource("7_v2fh4")]
-position = Vector2(142, 77)
+offset_left = 142.0
+offset_top = 77.0
+offset_right = 479.36075
+offset_bottom = 120.905716
 
 [node name="Backgorund" parent="." unique_id=1010888159 instance=ExtResource("4_htlq0")]
 position = Vector2(11, 0)
@@ -46,7 +49,7 @@ position = Vector2(2484, 678)
 position = Vector2(2870, 803)
 
 [node name="malwa" parent="Draw" unique_id=593525482 instance=ExtResource("6_p0nv3")]
-position = Vector2(309, 501)
+position = Vector2(-426, 510)
 
 <<<<<<< HEAD
 [node name="level" parent="." unique_id=341777473 instance=ExtResource("1_ixdg0")]

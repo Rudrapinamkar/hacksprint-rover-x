@@ -1,17 +1,22 @@
 [gd_scene format=3 uid="uid://bhm8ilu6a8r7g"]
 
 [ext_resource type="Script" uid="uid://csgcldpcnicy" path="res://Tscn/progress_bar.gd" id="1_ou13s"]
-[ext_resource type="Texture2D" uid="uid://cgydj22oaoysq" path="res://Extras/Progress_bar_2.png" id="2_snqay"]
+[ext_resource type="Texture2D" uid="uid://bb1f3x8mqegfb" path="res://UI/barBlue_horizontalBlue.png" id="1_pvrxx"]
 
-[node name="progress_bar" type="Node2D" unique_id=165627438]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ou13s"]
+texture = ExtResource("1_pvrxx")
+
+[node name="ProgressBar" type="ProgressBar" unique_id=269087249]
+offset_left = 16.000002
+offset_top = 59.99997
+offset_right = 353.36075
+offset_bottom = 103.905685
+rotation = -0.00095625874
+theme_override_styles/fill = SubResource("StyleBoxTexture_ou13s")
+value = 10.0
 script = ExtResource("1_ou13s")
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=1487044060]
-offset_left = -4.0
-offset_top = -2.0
-offset_right = 1976.0
-offset_bottom = 1078.0
-texture_under = ExtResource("2_snqay")
-texture_progress = ExtResource("2_snqay")
-tint_progress = Color(0, 1, 0, 1)
-metadata/_edit_use_anchors_ = true
+[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=652486745]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
