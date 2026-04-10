@@ -4,7 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://cptdx1m2b5igr" path="res://node_2d.tscn" id="2_sgjnq"]
 [ext_resource type="PackedScene" uid="uid://dojqept2dxvpx" path="res://Tscn/draw.tscn" id="3_sgjnq"]
 [ext_resource type="PackedScene" uid="uid://cm00j8m05wo1t" path="res://Tscn/backgorund.tscn" id="4_htlq0"]
-[ext_resource type="PackedScene" path="res://collectables.tscn" id="5_43bi4"]
+[ext_resource type="PackedScene" uid="uid://btv36ohi38qqy" path="res://collectables.tscn" id="5_43bi4"]
+[ext_resource type="PackedScene" uid="uid://dvmpe8vne417a" path="res://Tscn/malwa.tscn" id="6_p0nv3"]
 
 [node name="main" type="Node2D" unique_id=858370873]
 position = Vector2(9, 0)
@@ -12,7 +13,7 @@ position = Vector2(9, 0)
 [node name="Backgorund" parent="." unique_id=1010888159 instance=ExtResource("4_htlq0")]
 
 [node name="level" parent="." unique_id=1695662959 instance=ExtResource("1_ixdg0")]
-position = Vector2(0, 0)
+position = Vector2(-6, 6)
 
 [node name="Rover" parent="." unique_id=1896106237 instance=ExtResource("2_sgjnq")]
 
@@ -24,7 +25,10 @@ limit_right = 1980
 limit_bottom = 1080
 
 [node name="Draw" parent="." unique_id=1349148927 instance=ExtResource("3_sgjnq")]
-position = Vector2(2, 5)
+position = Vector2(-10, 6)
 
 [node name="Collectables" parent="." unique_id=1579731740 instance=ExtResource("5_43bi4")]
-position = Vector2(840, 745)
+position = Vector2(988, 672)
+
+[node name="malwa" parent="." unique_id=593525482 instance=ExtResource("6_p0nv3")]
+position = Vector2(1244, 674)
