@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://c0fp6kwou2p5b"]
 
-[ext_resource type="Script" uid="uid://c4xenf2x006bl" path="res://Tscn/3_dlevel.gd" id="1_liy43"]
+[ext_resource type="PackedScene" uid="uid://dcjavrix0y2jb" path="res://Extras/sun.glb" id="2_0liu5"]
 
 [node name="3dlevel" type="Node3D" unique_id=735076398]
-script = ExtResource("1_liy43")
+transform = Transform3D(1, 0, 0, 0, -0.8915289, 0.45296383, 0, -0.45296383, -0.8915289, 0, 0, 0)
+
+[node name="Sketchfab_Scene" parent="." unique_id=1513138582 instance=ExtResource("2_0liu5")]
+transform = Transform3D(0.6087614, -0.72018826, 0.33277375, 0, -0.41945213, -0.9077775, 0.7933533, 0.55261993, -0.25534627, -0.0064058453, 0.026143854, -0.03536552)
