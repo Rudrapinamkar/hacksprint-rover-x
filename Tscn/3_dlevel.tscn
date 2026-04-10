@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c0fp6kwou2p5b"]
+
+[ext_resource type="Script" uid="uid://c4xenf2x006bl" path="res://Tscn/3_dlevel.gd" id="1_liy43"]
+
+[node name="3dlevel" type="Node3D" unique_id=735076398]
+script = ExtResource("1_liy43")

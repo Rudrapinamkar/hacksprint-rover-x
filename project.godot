@@ -24,6 +24,10 @@ Global="*uid://bddue3n0jerjj"
 window/size/viewport_width=1980
 window/size/viewport_height=1080
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 left={
