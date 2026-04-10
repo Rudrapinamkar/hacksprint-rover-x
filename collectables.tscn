@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbs1"]
 size = Vector2(66, 73)
 
-[node name="Collectables" type="Area2D" unique_id=346205539 groups=["data"]]
+[node name="Collectables" type="Area2D" unique_id=1743866560]
 script = ExtResource("1_47sf6")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1266965365]
@@ -16,7 +16,7 @@ scale = Vector2(1.9765625, 1.6015625)
 texture = ExtResource("1_npbb8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=903733234]
-position = Vector2(41, 41.5)
+position = Vector2(42, 40)
 shape = SubResource("RectangleShape2D_4bbs1")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

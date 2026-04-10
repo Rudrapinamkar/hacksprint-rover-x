@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dvmpe8vne417a"]
+
+[ext_resource type="Texture2D" uid="uid://8p6ldcvcabib" path="res://icon.svg" id="1_dekw1"]
+[ext_resource type="Script" uid="uid://dp4kaibpgqq5n" path="res://Tscn/malwa.gd" id="1_mes0n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mes0n"]
+size = Vector2(129, 124)
+
+[node name="malwa" type="Area2D" unique_id=593525482]
+script = ExtResource("1_mes0n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=79395397]
+texture = ExtResource("1_dekw1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=370535486]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_mes0n")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
