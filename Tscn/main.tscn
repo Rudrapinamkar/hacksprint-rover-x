@@ -21,6 +21,9 @@ position = Vector2(779, 145)
 
 [node name="Camera2D" type="Camera2D" parent="Rover" unique_id=723448242]
 position = Vector2(501, 495)
+limit_left = 0
+limit_top = 0
+limit_bottom = 1080
 
 [node name="Draw" parent="." unique_id=1349148927 instance=ExtResource("3_sgjnq")]
 position = Vector2(-10, 6)
