@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://bmy6ws8pm1kel"]
 
+[ext_resource type="PackedScene" uid="uid://f3p8q3reggdf" path="res://Tscn/level.tscn" id="1_ixdg0"]
 [ext_resource type="PackedScene" uid="uid://cptdx1m2b5igr" path="res://node_2d.tscn" id="2_sgjnq"]
 [ext_resource type="PackedScene" uid="uid://dojqept2dxvpx" path="res://Tscn/draw.tscn" id="3_sgjnq"]
 [ext_resource type="PackedScene" uid="uid://cm00j8m05wo1t" path="res://Tscn/backgorund.tscn" id="4_htlq0"]
-[ext_resource type="PackedScene" uid="uid://btv36ohi38qqy" path="res://collectables.tscn" id="5_43bi4"]
+[ext_resource type="PackedScene" path="res://collectables.tscn" id="5_43bi4"]
 [ext_resource type="PackedScene" uid="uid://dvmpe8vne417a" path="res://Tscn/malwa.tscn" id="6_p0nv3"]
 [ext_resource type="PackedScene" uid="uid://bhm8ilu6a8r7g" path="res://Tscn/progress_bar.tscn" id="7_v2fh4"]
 
@@ -45,3 +46,5 @@ position = Vector2(1274, 658)
 
 [node name="progress_bar" parent="." unique_id=165627438 instance=ExtResource("7_v2fh4")]
 position = Vector2(-4, 5)
+
+[node name="level" parent="." unique_id=341777473 instance=ExtResource("1_ixdg0")]
