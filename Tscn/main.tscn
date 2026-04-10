@@ -17,33 +17,31 @@ position = Vector2(9, 0)
 position = Vector2(-6, 6)
 
 [node name="Rover" parent="." unique_id=1896106237 instance=ExtResource("2_sgjnq")]
+position = Vector2(779, 145)
 
-[node name="Camera2D" type="Camera2D" parent="Rover" unique_id=1589607663]
-position = Vector2(457, 445)
-limit_left = 0
-limit_top = 0
-limit_right = 1980
-limit_bottom = 1080
+[node name="Camera2D" type="Camera2D" parent="Rover" unique_id=723448242]
+position = Vector2(501, 495)
 
 [node name="Draw" parent="." unique_id=1349148927 instance=ExtResource("3_sgjnq")]
 position = Vector2(-10, 6)
 
-[node name="Collectables" parent="." unique_id=1579731740 instance=ExtResource("5_43bi4")]
-position = Vector2(964, 619)
+[node name="Collectables" parent="Draw" unique_id=1579731740 instance=ExtResource("5_43bi4")]
+position = Vector2(974, 613)
 
-[node name="Collectables2" parent="." unique_id=1743866560 instance=ExtResource("5_43bi4")]
-position = Vector2(1042, 592)
+[node name="Collectables2" parent="Draw" unique_id=1743866560 instance=ExtResource("5_43bi4")]
+position = Vector2(1052, 586)
 
-[node name="Collectables3" parent="." unique_id=1998529034 instance=ExtResource("5_43bi4")]
-position = Vector2(1148, 543)
+[node name="Collectables3" parent="Draw" unique_id=1998529034 instance=ExtResource("5_43bi4")]
+position = Vector2(1158, 537)
 
-[node name="Collectables4" parent="." unique_id=716934648 instance=ExtResource("5_43bi4")]
-position = Vector2(1240, 488)
+[node name="Collectables4" parent="Draw" unique_id=716934648 instance=ExtResource("5_43bi4")]
+position = Vector2(1250, 482)
 
-[node name="Collectables5" parent="." unique_id=1193433598 instance=ExtResource("5_43bi4")]
-position = Vector2(1340, 449)
+[node name="Collectables5" parent="Draw" unique_id=1193433598 instance=ExtResource("5_43bi4")]
+position = Vector2(1350, 443)
 
-[node name="malwa" parent="." unique_id=593525482 instance=ExtResource("6_p0nv3")]
-position = Vector2(1264, 664)
+[node name="malwa" parent="Draw" unique_id=593525482 instance=ExtResource("6_p0nv3")]
+position = Vector2(1274, 658)
 
 [node name="progress_bar" parent="." unique_id=165627438 instance=ExtResource("7_v2fh4")]
+position = Vector2(-4, 5)
