@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://bmy6ws8pm1kel"]
 
+[ext_resource type="PackedScene" uid="uid://f3p8q3reggdf" path="res://Tscn/level.tscn" id="1_ixdg0"]
 [ext_resource type="PackedScene" uid="uid://cptdx1m2b5igr" path="res://node_2d.tscn" id="2_sgjnq"]
 [ext_resource type="PackedScene" uid="uid://dojqept2dxvpx" path="res://Tscn/draw.tscn" id="3_sgjnq"]
 [ext_resource type="PackedScene" uid="uid://cm00j8m05wo1t" path="res://Tscn/backgorund.tscn" id="4_htlq0"]
-[ext_resource type="PackedScene" uid="uid://btv36ohi38qqy" path="res://collectables.tscn" id="5_43bi4"]
+[ext_resource type="PackedScene" path="res://collectables.tscn" id="5_43bi4"]
 [ext_resource type="PackedScene" uid="uid://dvmpe8vne417a" path="res://Tscn/malwa.tscn" id="6_p0nv3"]
 [ext_resource type="PackedScene" uid="uid://f3p8q3reggdf" path="res://Tscn/level.tscn" id="7_lmwce"]
 [ext_resource type="PackedScene" uid="uid://bhm8ilu6a8r7g" path="res://Tscn/progress_bar.tscn" id="7_v2fh4"]
@@ -11,7 +12,16 @@
 [node name="main" type="Node2D" unique_id=858370873]
 position = Vector2(9, 0)
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1296739294]
+
+[node name="progress_bar" parent="CanvasLayer" unique_id=165627438 instance=ExtResource("7_v2fh4")]
+offset_left = 142.0
+offset_top = 77.0
+offset_right = 479.36075
+offset_bottom = 120.905716
+
 [node name="Backgorund" parent="." unique_id=1010888159 instance=ExtResource("4_htlq0")]
+position = Vector2(11, 0)
 
 [node name="Rover" parent="." unique_id=1896106237 instance=ExtResource("2_sgjnq")]
 position = Vector2(779, 145)
@@ -27,25 +37,23 @@ limit_bottom = 1096
 position = Vector2(-10, 6)
 
 [node name="Collectables" parent="Draw" unique_id=1579731740 instance=ExtResource("5_43bi4")]
-position = Vector2(974, 613)
+position = Vector2(1688, 707)
 
 [node name="Collectables2" parent="Draw" unique_id=1743866560 instance=ExtResource("5_43bi4")]
-position = Vector2(1052, 586)
+position = Vector2(1976, 674)
 
-[node name="Collectables3" parent="Draw" unique_id=1998529034 instance=ExtResource("5_43bi4")]
-position = Vector2(1158, 537)
+[node name="Collectables3" parent="Draw" unique_id=1840201363 instance=ExtResource("5_43bi4")]
+position = Vector2(2484, 678)
 
-[node name="Collectables4" parent="Draw" unique_id=716934648 instance=ExtResource("5_43bi4")]
-position = Vector2(1250, 482)
-
-[node name="Collectables5" parent="Draw" unique_id=1193433598 instance=ExtResource("5_43bi4")]
-position = Vector2(1350, 443)
+[node name="Collectables4" parent="Draw" unique_id=1907625760 instance=ExtResource("5_43bi4")]
+position = Vector2(2870, 803)
 
 [node name="malwa" parent="Draw" unique_id=593525482 instance=ExtResource("6_p0nv3")]
-position = Vector2(1274, 658)
+position = Vector2(-426, 510)
 
-[node name="progress_bar" parent="." unique_id=165627438 instance=ExtResource("7_v2fh4")]
-position = Vector2(-4, 5)
-
+<<<<<<< HEAD
+[node name="level" parent="." unique_id=341777473 instance=ExtResource("1_ixdg0")]
+=======
 [node name="level" parent="." unique_id=341777473 instance=ExtResource("7_lmwce")]
 position = Vector2(-13, -10)
+>>>>>>> 6cd9e6c7c09c082ffa440db6cd2d7de335743161

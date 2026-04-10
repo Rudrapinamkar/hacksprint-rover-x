@@ -4,17 +4,17 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ktipunr1q4i8"
-path="res://.godot/imported/rocket.blend-607e11074b1ba0b230730e109defc70e.scn"
+valid=false
 
 [deps]
 
 source_file="res://Enviroment/rocket.blend"
-dest_files=["res://.godot/imported/rocket.blend-607e11074b1ba0b230730e109defc70e.scn"]
 
 [params]
 
 nodes/root_type=""
 nodes/root_name=""
+nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false

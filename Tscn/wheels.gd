@@ -1,6 +1,6 @@
 extends RigidBody2D
 var wheels=[]
-var speed=600
+var speed=500
 var max_speed=50
 
 func _ready() -> void:

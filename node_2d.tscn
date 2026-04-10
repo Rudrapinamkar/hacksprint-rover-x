@@ -5,14 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://cdsga0ojnjlen" path="res://Tscn/wheels.tscn" id="2_0e48y"]
 
 [node name="Rover" type="RigidBody2D" unique_id=1229251134 groups=["player"]]
-position = Vector2(0, 192)
+position = Vector2(34, 242)
 script = ExtResource("1_epypp")
 
 [node name="PinJoint2D" type="PinJoint2D" parent="." unique_id=1787300907]
 position = Vector2(446, 517)
 node_a = NodePath("..")
 node_b = NodePath("Wheels")
-softness = 2.17
+softness = 2.0
 
 [node name="Wheels" parent="PinJoint2D" unique_id=371370446 groups=["wheels"] instance=ExtResource("2_0e48y")]
 
@@ -20,7 +20,7 @@ softness = 2.17
 position = Vector2(526, 516)
 node_a = NodePath("..")
 node_b = NodePath("Wheels")
-softness = 2.15
+softness = 2.0
 
 [node name="Wheels" parent="PinJoint2D2" unique_id=2110242911 groups=["wheels"] instance=ExtResource("2_0e48y")]
 
