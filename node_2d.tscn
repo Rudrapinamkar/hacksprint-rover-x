@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cdsga0ojnjlen" path="res://Tscn/wheels.tscn" id="2_0e48y"]
 
 [node name="Rover" type="RigidBody2D" unique_id=1229251134 groups=["player"]]
-position = Vector2(0, 192)
+position = Vector2(34, 242)
 script = ExtResource("1_epypp")
 
 [node name="PinJoint2D" type="PinJoint2D" parent="." unique_id=1787300907]
