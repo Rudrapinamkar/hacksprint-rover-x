@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cdsga0ojnjlen" path="res://Tscn/wheels.tscn" id="2_0e48y"]
 
 [node name="Rover" type="RigidBody2D" unique_id=1229251134 groups=["player"]]
-position = Vector2(34, 242)
+position = Vector2(55, 259)
 script = ExtResource("1_epypp")
 
 [node name="PinJoint2D" type="PinJoint2D" parent="." unique_id=1787300907]
@@ -40,4 +40,7 @@ polygon = PackedVector2Array(25, -28.5, 13.5, -32, 8, -32, 8, -31.3, 3.5, -29, 1
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=441720284]
 polygon = PackedVector2Array(425, 468, 472, 468, 472, 464, 468, 464, 468, 460, 461, 460, 461, 458, 455, 458, 455, 456, 453, 456, 453, 448, 457, 448, 457, 443, 504, 443, 506, 443, 506, 418, 527, 417, 527, 422, 537, 422, 537, 435, 525, 434, 525, 476, 537, 476, 537, 519, 429, 519, 429, 485, 426, 484)
 
+[node name="Area2D2" type="Area2D" parent="." unique_id=2058740535]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

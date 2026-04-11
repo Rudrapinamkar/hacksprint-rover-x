@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cptdx1m2b5igr" path="res://node_2d.tscn" id="3_eawnh"]
 [ext_resource type="PackedScene" uid="uid://btv36ohi38qqy" path="res://collectables.tscn" id="4_8efqd"]
 [ext_resource type="PackedScene" uid="uid://bhm8ilu6a8r7g" path="res://Tscn/progress_bar.tscn" id="5_donj0"]
+[ext_resource type="AudioStream" uid="uid://dwhlssj1itbls" path="res://Extras/WhatsApp Audio 2026-04-10 at 10.53.15.mp3" id="6_11jtl"]
 
 [node name="Main_2" type="Node2D" unique_id=225289196]
 
@@ -44,3 +45,9 @@ position = Vector2(3298, 621)
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1577888720]
 
 [node name="ProgressBar" parent="CanvasLayer" unique_id=269087249 instance=ExtResource("5_donj0")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1154455955]
+stream = ExtResource("6_11jtl")
+volume_db = -18.735
+autoplay = true
+parameters/looping = true

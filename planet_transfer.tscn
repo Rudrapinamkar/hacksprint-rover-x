@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://v57hh6w0625h" path="res://Enviroment/Solar_system/Mars.png" id="1_oteh8"]
 [ext_resource type="Texture2D" uid="uid://cn03ds347swlf" path="res://Enviroment/Solar_system/jupiter.png" id="2_rvejw"]
 [ext_resource type="Texture2D" uid="uid://7pk0x11q1ea5" path="res://Enviroment/backgrounds/space.png" id="2_tsciw"]
-[ext_resource type="Texture2D" uid="uid://cj7xxbaniy1nq" path="res://Enviroment/Solar_system/Orbits.png" id="3_mjg0q"]
 [ext_resource type="Script" uid="uid://2dybeq201t0c" path="res://area_2d.gd" id="3_s7ahl"]
 [ext_resource type="Texture2D" uid="uid://c5fotni8c53t4" path="res://Enviroment/Solar_system/Sun.2.png" id="3_u5hj4"]
 [ext_resource type="Texture2D" uid="uid://bb60dyrqd4a72" path="res://Enviroment/Solar_system/Venus.png" id="4_alko7"]
+[ext_resource type="Texture2D" uid="uid://dmb1r1lhjeqhj" path="res://Enviroment/Solar_system/bc.4.png" id="4_ifrpb"]
 [ext_resource type="Script" uid="uid://elsw80bn0bqm" path="res://area_2d_2.gd" id="5_2ijgo"]
 [ext_resource type="Texture2D" uid="uid://cvuitsa7donoi" path="res://Enviroment/backgrounds/Earh.new.png" id="5_s7ahl"]
 [ext_resource type="Texture2D" uid="uid://c13483fpd6pvl" path="res://Enviroment/Solar_system/Screenshot 2026-04-11 021647.png" id="6_2ijgo"]
@@ -17,9 +17,14 @@
 [ext_resource type="Script" uid="uid://bd2krplyhw58e" path="res://area_2d_6.gd" id="13_ifrpb"]
 [ext_resource type="Script" uid="uid://d0bvxu34v3y2y" path="res://area_2d_7.gd" id="14_ntoyh"]
 [ext_resource type="Script" uid="uid://bbwpc4qfcehtw" path="res://space.gd" id="16_tsciw"]
+[ext_resource type="Script" uid="uid://dppax8fsojw26" path="res://area_2d_8.gd" id="18_fdcjb"]
+[ext_resource type="Texture2D" uid="uid://c7mfaxgt674g1" path="res://Enviroment/Solar_system/Neptune.png" id="18_ntoyh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_oteh8"]
 radius = 56.142673
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fdcjb"]
+radius = 35.22783
 
 [node name="Planet_transfer" type="Node2D" unique_id=727354806]
 script = ExtResource("1_alko7")
@@ -32,7 +37,7 @@ script = ExtResource("16_tsciw")
 
 [node name="Orbits" type="Sprite2D" parent="." unique_id=1258201153]
 position = Vector2(950, 537)
-texture = ExtResource("3_mjg0q")
+texture = ExtResource("4_ifrpb")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1467316651]
 script = ExtResource("3_s7ahl")
@@ -140,11 +145,23 @@ polygon = PackedVector2Array(111, 138.6, 108.5, 139.70001, 108.5, 140.70001, 106
 script = ExtResource("14_ntoyh")
 
 [node name="saturn" type="Sprite2D" parent="Area2D7" unique_id=769021777]
-position = Vector2(566, 962)
+position = Vector2(1135, 886)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_2ijgo")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D7" unique_id=1843277897]
-position = Vector2(566, 964)
+position = Vector2(1143, 885)
 scale = Vector2(0.5, 0.5)
 polygon = PackedVector2Array(110, -85, 110, -83.3, 108, -82.2, 108, -80, 95.79999, -80, 92.79999, -74, 79.899994, -74, 76.899994, -69, 64.20001, -69, 61, -65.8, 61, -64, 54.200012, -64, 51, -60.800003, 51, -58.399994, 46, -56.399994, 46, -54, 43.399994, -54, 41.399994, -59, 33.399994, -59, 31.399994, -64, -12.800003, -64, -16, -60.800003, -16, -59, -23.399994, -59, -25.399994, -54, -34.399994, -54, -36.399994, -49, -43.800003, -49, -47, -45.800003, -47, -43.399994, -52, -41.399994, -52, -37, -65.7, -26, -68, -26, -68, -17, -70.7, -15, -73, -15, -73, -7.100006, -78, -4.100006, -78, 3.600006, -83, 5.600006, -83, 18, -85, 18, -92, 28, -99.8, 28, -104, 32.199997, -104, 34, -105.8, 34, -109, 37.199997, -109, 39, -110.8, 39, -114, 42.199997, -114, 44, -115.8, 44, -119, 47.199997, -119, 49, -120.8, 49, -124, 52.199997, -124, 54, -125.8, 54, -129, 57.199997, -129, 59, -130.9, 59, -147.9, 77, -150, 77, -150, 85.70001, -152.5, 87, -155, 87, -155, 95.70001, -157.5, 97, -160, 97, -160, 121.899994, -143, 137.9, -143, 140, -98.2, 140, -95, 136.79999, -95, 135, -82.899994, 135, -79.899994, 130, -66.600006, 130, -64.600006, 125, -51.600006, 125, -49.199997, 119, -41.199997, 119, -38, 115.79999, -38, 113.600006, -28, 111.600006, -28, 109, -25.399994, 109, -23.399994, 114, -15.399994, 114, -13.399994, 119, 30.800003, 119, 34, 115.79999, 34, 114, 41.399994, 114, 43.399994, 109, 51.399994, 109, 53.399994, 104, 61.899994, 104, 82.899994, 81, 85, 81, 85, 72.29999, 90, 70.399994, 90, 62.100006, 93.5, 60, 96, 60, 96, 52.100006, 101, 49.100006, 101, 35, 103.100006, 35, 105.100006, 32, 107.79999, 32, 111, 28.800003, 111, 27, 112.79999, 27, 116, 23.800003, 116, 22, 117.79999, 22, 121, 18.800003, 121, 17, 122.79999, 17, 160.79999, -22, 163, -22, 163, -30.800003, 165.5, -32, 168, -32, 168, -40.800003, 170.5, -42, 173, -42, 173, -65.899994, 155, -83, 155, -85)
+
+[node name="Area2D8" type="Area2D" parent="." unique_id=334228260]
+script = ExtResource("18_fdcjb")
+
+[node name="Neptune" type="Sprite2D" parent="Area2D8" unique_id=913845546]
+position = Vector2(1562, 934.99994)
+scale = Vector2(0.19607858, 0.1960786)
+texture = ExtResource("18_ntoyh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8" unique_id=462882673]
+position = Vector2(1562, 938)
+shape = SubResource("CircleShape2D_fdcjb")
