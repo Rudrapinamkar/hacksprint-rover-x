@@ -16,7 +16,7 @@ scale = Vector2(1.0761034, 1.0105325)
 texture = ExtResource("1_bqoj2")
 
 [node name="Parallax2D2" type="Parallax2D" parent="." unique_id=2054994179]
-scroll_scale = Vector2(0.1, 0.1)
+scroll_scale = Vector2(0.04, 0.04)
 
 [node name="Earh_new" type="Sprite2D" parent="Parallax2D2" unique_id=1129282652]
 texture_filter = 1

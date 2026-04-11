@@ -25,4 +25,18 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_ms0q7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_6jjk0")
 text = "Play"
 
+[node name="Button2" type="Button" parent="." unique_id=1036228808]
+texture_filter = 1
+offset_left = 705.0
+offset_top = 641.0
+offset_right = 1178.0
+offset_bottom = 788.0
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxTexture_ms0q7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6jjk0")
+text = "Exit
+"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
