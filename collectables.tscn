@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://btv36ohi38qqy"]
 
 [ext_resource type="Script" uid="uid://diqayqxl3tm4s" path="res://collectables.gd" id="1_47sf6"]
-[ext_resource type="Texture2D" uid="uid://cdqfuusf2uuvb" path="res://Extras/Progress_bar.2png.png" id="2_4bbs1"]
+[ext_resource type="Texture2D" uid="uid://byh7w6s6fioyq" path="res://Enviroment/backgrounds/Data.png" id="2_4bbs1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4bbs1"]
 size = Vector2(66, 73)

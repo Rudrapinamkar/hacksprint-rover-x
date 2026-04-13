@@ -2,41 +2,85 @@
 
 [ext_resource type="Script" uid="uid://cwcw0hg0fci0a" path="res://main_menue.gd" id="1_ms0q7"]
 [ext_resource type="Texture2D" uid="uid://7pk0x11q1ea5" path="res://Enviroment/backgrounds/space.png" id="2_6jjk0"]
+[ext_resource type="Texture2D" uid="uid://cm7ffrx78k3av" path="res://Enviroment/backgrounds/X.png" id="2_7k14n"]
+[ext_resource type="Script" uid="uid://bbwpc4qfcehtw" path="res://space.gd" id="4_7k14n"]
+[ext_resource type="FontFile" uid="uid://8snmw24doosa" path="res://Player/Minecrafter-MA3Dw.ttf" id="5_kfeh0"]
+[ext_resource type="AudioStream" uid="uid://cuty6xtbrk10m" path="res://Extras/monume-space-ambient-498030.mp3" id="6_yf64j"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ms0q7"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6jjk0"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yf64j"]
+
 [node name="Main_menue" type="Node2D" unique_id=315850922]
 script = ExtResource("1_ms0q7")
 
 [node name="Space" type="Sprite2D" parent="." unique_id=1051168839]
-position = Vector2(983, 528)
+position = Vector2(1588, 531.50006)
+scale = Vector2(1.6111112, 1.0064815)
 texture = ExtResource("2_6jjk0")
+script = ExtResource("4_7k14n")
 
 [node name="Button" type="Button" parent="." unique_id=299128826]
 texture_filter = 1
-offset_left = 705.0
-offset_top = 468.0
-offset_right = 1178.0
-offset_bottom = 615.0
-theme_override_font_sizes/font_size = 60
+offset_left = 347.0
+offset_top = 540.0
+offset_right = 820.0
+offset_bottom = 687.0
+theme_override_fonts/font = ExtResource("5_kfeh0")
+theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxTexture_ms0q7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_6jjk0")
 text = "Play"
 
 [node name="Button2" type="Button" parent="." unique_id=1036228808]
 texture_filter = 1
-offset_left = 705.0
-offset_top = 641.0
-offset_right = 1178.0
-offset_bottom = 788.0
-theme_override_font_sizes/font_size = 60
+offset_left = 1044.0
+offset_top = 540.0
+offset_right = 1517.0
+offset_bottom = 687.0
+theme_override_fonts/font = ExtResource("5_kfeh0")
+theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxTexture_ms0q7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_6jjk0")
 text = "Exit
 "
 
+[node name="X" type="Sprite2D" parent="." unique_id=1574418846]
+texture_filter = 1
+position = Vector2(972.0001, 607.00006)
+scale = Vector2(16.476563, 16.476563)
+texture = ExtResource("2_7k14n")
+
+[node name="Label" type="Label" parent="." unique_id=709680466]
+offset_left = 694.0
+offset_top = 136.0
+offset_right = 1492.8372
+offset_bottom = 361.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_kfeh0")
+theme_override_font_sizes/font_size = 138
+text = "R o v e r"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=234411016]
+stream = ExtResource("6_yf64j")
+volume_db = 5.353
+autoplay = true
+parameters/looping = true
+
+[node name="Button3" type="Button" parent="." unique_id=436806462]
+offset_left = 799.0
+offset_top = 887.0
+offset_right = 1099.0
+offset_bottom = 987.0
+theme_override_fonts/font = ExtResource("5_kfeh0")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxTexture_yf64j")
+text = "Buy
+"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

@@ -1,5 +1,5 @@
 extends Area2D
-@onready var venus: Sprite2D = $Venus
+@onready var venus: Sprite2D = $".."
 
 func _ready():
 	mouse_entered.connect(_on_hover)
@@ -8,6 +8,6 @@ func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.pressed:
 		print(name, "clicked")
 func _on_hover():
-	$Venus.modulate = Color(0.7, 0.7, 0.7)
+	$"..".modulate = Color(0.7, 0.7, 0.7)
 func _on_exit():
-	$Venus.modulate = Color(1, 1, 1)
+	$"..".modulate = Color(1, 1, 1)

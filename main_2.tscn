@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://by0717dhpu7h1"]
 
 [ext_resource type="PackedScene" uid="uid://cm00j8m05wo1t" path="res://Tscn/backgorund.tscn" id="1_2ha8l"]
+[ext_resource type="Script" uid="uid://d1087dl0jmt68" path="res://main_2.gd" id="1_eawnh"]
 [ext_resource type="PackedScene" uid="uid://f3p8q3reggdf" path="res://Tscn/level.tscn" id="2_11jtl"]
 [ext_resource type="PackedScene" uid="uid://cptdx1m2b5igr" path="res://node_2d.tscn" id="3_eawnh"]
 [ext_resource type="PackedScene" uid="uid://btv36ohi38qqy" path="res://collectables.tscn" id="4_8efqd"]
@@ -8,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://dwhlssj1itbls" path="res://Extras/WhatsApp Audio 2026-04-10 at 10.53.15.mp3" id="6_11jtl"]
 
 [node name="Main_2" type="Node2D" unique_id=225289196]
+script = ExtResource("1_eawnh")
 
 [node name="Backgorund" parent="." unique_id=144487816 instance=ExtResource("1_2ha8l")]
 
@@ -24,27 +26,6 @@ limit_top = 27
 limit_right = 10000009
 limit_bottom = 1107
 
-[node name="Collectables" parent="." unique_id=1743866560 instance=ExtResource("4_8efqd")]
-position = Vector2(749, 630)
-
-[node name="Collectables2" parent="." unique_id=397126467 instance=ExtResource("4_8efqd")]
-position = Vector2(749, 630)
-
-[node name="Collectables3" parent="." unique_id=1212827339 instance=ExtResource("4_8efqd")]
-position = Vector2(2340, 665)
-
-[node name="Collectables5" parent="." unique_id=1455277600 instance=ExtResource("4_8efqd")]
-position = Vector2(2863, 776)
-
-[node name="Collectables7" parent="." unique_id=357822372 instance=ExtResource("4_8efqd")]
-position = Vector2(3372, 658)
-
-[node name="Collectables6" parent="." unique_id=2031004560 instance=ExtResource("4_8efqd")]
-position = Vector2(3746, 705)
-
-[node name="Collectables4" parent="." unique_id=944820163 instance=ExtResource("4_8efqd")]
-position = Vector2(3159, 673)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1577888720]
 
 [node name="ProgressBar" parent="CanvasLayer" unique_id=269087249 instance=ExtResource("5_donj0")]
@@ -54,3 +35,23 @@ stream = ExtResource("6_11jtl")
 volume_db = -18.735
 autoplay = true
 parameters/looping = true
+
+[node name="Node" type="Node" parent="." unique_id=1201437814]
+
+[node name="Collectables2" parent="Node" unique_id=397126467 instance=ExtResource("4_8efqd")]
+position = Vector2(1951, 668)
+
+[node name="Collectables3" parent="Node" unique_id=1743866560 instance=ExtResource("4_8efqd")]
+position = Vector2(14918, 694)
+
+[node name="Collectables4" parent="Node" unique_id=954159189 instance=ExtResource("4_8efqd")]
+position = Vector2(12488, 677)
+
+[node name="Collectables5" parent="Node" unique_id=1809597354 instance=ExtResource("4_8efqd")]
+position = Vector2(7266, 703)
+
+[node name="Collectables7" parent="Node" unique_id=2092973301 instance=ExtResource("4_8efqd")]
+position = Vector2(10141, 800)
+
+[node name="Collectables6" parent="Node" unique_id=2031004560 instance=ExtResource("4_8efqd")]
+position = Vector2(3746, 721)

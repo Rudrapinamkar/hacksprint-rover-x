@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://rmcwrqkpnp5q"]
+
+[ext_resource type="Texture2D" uid="uid://0jgw8pufkx7q" path="res://Enviroment/backgrounds/Background_space.png" id="1_62e2m"]
+[ext_resource type="Script" uid="uid://berrqsbuob73y" path="res://background_space.gd" id="2_qtu10"]
+[ext_resource type="FontFile" uid="uid://8snmw24doosa" path="res://Player/Minecrafter-MA3Dw.ttf" id="3_qtu10"]
+
+[node name="Shop" type="Control" unique_id=1082730705]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundSpace" type="Sprite2D" parent="." unique_id=1100434103]
+position = Vector2(1199.5, 531)
+scale = Vector2(2.5048828, 1.8933331)
+texture = ExtResource("1_62e2m")
+script = ExtResource("2_qtu10")
+
+[node name="Label" type="Label" parent="." unique_id=85059521]
+layout_mode = 0
+offset_left = 619.0
+offset_top = 509.0
+offset_right = 2393.652
+offset_bottom = 852.0
+theme_override_fonts/font = ExtResource("3_qtu10")
+theme_override_font_sizes/font_size = 106
+text = "Coming soon......"

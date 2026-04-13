@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://8qj3qd6rgt1b"]
+
+[ext_resource type="Script" uid="uid://babi2vh75eyhb" path="res://story.gd" id="1_27gb3"]
+[ext_resource type="Texture2D" uid="uid://7pk0x11q1ea5" path="res://Enviroment/backgrounds/space.png" id="2_bwkhw"]
+
+[node name="Story" type="Control" unique_id=1149539085]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1980.0
+offset_bottom = -1080.0
+script = ExtResource("1_27gb3")
+
+[node name="Space" type="Sprite2D" parent="." unique_id=566686078]
+position = Vector2(22728, 13953)
+scale = Vector2(27.767593, 27.767593)
+texture = ExtResource("2_bwkhw")
+
+[node name="Label" type="Label" parent="." unique_id=211936910]
+layout_mode = 0
+offset_left = 585.0
+offset_top = -4.0
+offset_right = 1367.0
+offset_bottom = 251.0
+theme_override_font_sizes/font_size = 92
+text = "Command Centre
+"
+
+[node name="Label2" type="Label" parent="." unique_id=555774334]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 234.0
+offset_right = 1822.0
+offset_bottom = 951.0
+theme_override_font_sizes/font_size = 75
+text = "hi"
+autowrap_mode = 1

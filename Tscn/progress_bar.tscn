@@ -1,22 +1,37 @@
 [gd_scene format=3 uid="uid://bhm8ilu6a8r7g"]
 
 [ext_resource type="Script" uid="uid://csgcldpcnicy" path="res://Tscn/progress_bar.gd" id="1_ou13s"]
-[ext_resource type="Texture2D" uid="uid://bb1f3x8mqegfb" path="res://UI/barBlue_horizontalBlue.png" id="1_pvrxx"]
+[ext_resource type="Texture2D" uid="uid://byh7w6s6fioyq" path="res://Enviroment/backgrounds/Data.png" id="2_ou13s"]
+[ext_resource type="FontFile" uid="uid://8snmw24doosa" path="res://Player/Minecrafter-MA3Dw.ttf" id="2_snqay"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ou13s"]
-texture = ExtResource("1_pvrxx")
-
-[node name="ProgressBar" type="ProgressBar" unique_id=269087249]
-offset_left = 16.000002
-offset_top = 59.99997
-offset_right = 353.36075
-offset_bottom = 103.905685
+[node name="ProgressBar" type="Control" unique_id=1220737728]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 rotation = -0.00095625874
-theme_override_styles/fill = SubResource("StyleBoxTexture_ou13s")
-value = 10.0
 script = ExtResource("1_ou13s")
 
-[node name="TextureProgressBar" type="TextureProgressBar" parent="." unique_id=652486745]
+[node name="Label" type="Label" parent="." unique_id=1696994897]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 144.9349
+offset_top = 68.138626
+offset_right = 551.8552
+offset_bottom = 266.1386
+theme_override_fonts/font = ExtResource("2_snqay")
+theme_override_font_sizes/font_size = 89
+text = "Start"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=59128052]
+layout_mode = 0
+offset_left = 32.76976
+offset_right = 192.18689
+offset_bottom = 159.41713
+
+[node name="Data" type="Sprite2D" parent="." unique_id=1605452984]
+texture_filter = 1
+position = Vector2(98.89286, 112.09463)
+scale = Vector2(1.7210227, 1.7210227)
+texture = ExtResource("2_ou13s")
