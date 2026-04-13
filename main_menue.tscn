@@ -17,7 +17,7 @@
 script = ExtResource("1_ms0q7")
 
 [node name="Space" type="Sprite2D" parent="." unique_id=1051168839]
-position = Vector2(1588, 531.50006)
+position = Vector2(1172.0002, 531.50006)
 scale = Vector2(1.6111112, 1.0064815)
 texture = ExtResource("2_6jjk0")
 script = ExtResource("4_7k14n")
@@ -81,6 +81,6 @@ text = "Buy
 "
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

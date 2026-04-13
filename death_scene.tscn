@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://62jrwcfvage3"]
+
+[ext_resource type="Script" uid="uid://fshamur0rc2" path="res://death_scene.gd" id="1_fxiyg"]
+[ext_resource type="Texture2D" uid="uid://c8fr0l1dr5w4f" path="res://Enviroment/Gemini_Generated_Image_om4hjjom4hjjom4h.png" id="2_oukyh"]
+[ext_resource type="FontFile" uid="uid://8snmw24doosa" path="res://Player/Minecrafter-MA3Dw.ttf" id="3_xya4v"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fxiyg"]
+
+[node name="Death_scene" type="Node2D" unique_id=101899480]
+script = ExtResource("1_fxiyg")
+
+[node name="GeminiGeneratedImageOm4Hjjom4Hjjom4h" type="Sprite2D" parent="." unique_id=49745723]
+modulate = Color(0.32026795, 0.32026795, 0.32026795, 1)
+position = Vector2(1124, 536)
+scale = Vector2(1.7272726, 1.4197444)
+texture = ExtResource("2_oukyh")
+
+[node name="Label" type="Label" parent="." unique_id=976582873]
+offset_left = 489.0
+offset_top = 439.0
+offset_right = 1422.0
+offset_bottom = 656.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("3_xya4v")
+theme_override_font_sizes/font_size = 78
+text = "The Rover Was Damaged
+"
+
+[node name="Button" type="Button" parent="." unique_id=1396944506]
+offset_left = 743.0
+offset_top = 608.0
+offset_right = 1049.0
+offset_bottom = 743.0
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("3_xya4v")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/normal = SubResource("StyleBoxTexture_fxiyg")
+text = "Menue"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

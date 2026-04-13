@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dj2hjd21vcm6t"]
+
+[ext_resource type="Script" uid="uid://c01d7a4xtfrwf" path="res://damage.gd" id="2_rwnek"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1nyod"]
+size = Vector2(53.270844, 31.20153)
+
+[node name="damage" type="Sprite2D" unique_id=1494937218]
+position = Vector2(11, 14)
+scale = Vector2(1.3125, 1.53125)
+script = ExtResource("2_rwnek")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1140300685 groups=["obstacle"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1013406568]
+position = Vector2(-9.142857, -9.795918)
+shape = SubResource("RectangleShape2D_1nyod")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
