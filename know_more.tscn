@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://0j4ycke7f06b"]
+
+[ext_resource type="Texture2D" uid="uid://7pk0x11q1ea5" path="res://Enviroment/backgrounds/space.png" id="1_1b04c"]
+[ext_resource type="Script" uid="uid://dly2tordkfbxp" path="res://know_more.gd" id="1_hw5kk"]
+
+[node name="know more" type="Node2D" unique_id=554226514]
+script = ExtResource("1_hw5kk")
+
+[node name="Space" type="Sprite2D" parent="." unique_id=1149971236]
+modulate = Color(0.30905873, 0.30905873, 0.30905873, 1)
+position = Vector2(1040, 522)
+texture = ExtResource("1_1b04c")
+
+[node name="Label" type="Label" parent="." unique_id=792216864]
+offset_left = 52.0
+offset_top = 95.0
+offset_right = 2413.0
+offset_bottom = 881.0
+theme_override_font_sizes/font_size = 48
+text = "1] The Game is still under development 
+2] Of all the planets only earth(moon) , mars, and neptune are available
+3] These Maps Too are incomplete
+4] To be frank the game is incomplete , and will be updated until the next month
+5] The updated game will be free to play and will a contain a stroy that
+ we hope you enjoy ,
+ Thank you for your attention to this matter"
+
+[node name="Button" type="Button" parent="." unique_id=665133604]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

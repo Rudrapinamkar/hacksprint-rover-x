@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cp6hjc7qq2dau"]
+
+[ext_resource type="Script" uid="uid://cgjlaos72n6gx" path="res://terrrrrain.gd" id="1_206su"]
+
+[sub_resource type="Curve2D" id="Curve2D_206su"]
+bake_interval = 87.44
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -3, 636, -643.8562, 85.74357, 643.8562, -85.74357, 707, 503, -574.7735, -109.97471, 574.7735, 109.97471, 1831, 785, -234.47438, 365.19904, 234.47438, -365.19904, 2748, 505, -334.07413, -62.249836, 334.07413, 62.249836, 3274, 733, 0, 0, 0, 0, 4932, 821, 0, 0, 0, 0, 4854, 1228, 0, 0, 0, 0, 215, 1282, 0, 0, 0, 0, 5, 636)
+}
+point_count = 9
+
+[node name="Terrain" type="Node2D" unique_id=1229517302]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=494266407]
+script = ExtResource("1_206su")
+
+[node name="Path2D" type="Path2D" parent="StaticBody2D" unique_id=121738728]
+curve = SubResource("Curve2D_206su")
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D" unique_id=804490402]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=2146939579]

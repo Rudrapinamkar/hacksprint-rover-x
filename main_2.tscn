@@ -2,23 +2,20 @@
 
 [ext_resource type="PackedScene" uid="uid://cm00j8m05wo1t" path="res://Tscn/backgorund.tscn" id="1_2ha8l"]
 [ext_resource type="Script" uid="uid://d1087dl0jmt68" path="res://main_2.gd" id="1_eawnh"]
-[ext_resource type="PackedScene" uid="uid://f3p8q3reggdf" path="res://Tscn/level.tscn" id="2_11jtl"]
 [ext_resource type="PackedScene" uid="uid://cptdx1m2b5igr" path="res://node_2d.tscn" id="3_eawnh"]
 [ext_resource type="PackedScene" uid="uid://btv36ohi38qqy" path="res://collectables.tscn" id="4_8efqd"]
 [ext_resource type="PackedScene" uid="uid://bhm8ilu6a8r7g" path="res://Tscn/progress_bar.tscn" id="5_donj0"]
 [ext_resource type="AudioStream" uid="uid://dwhlssj1itbls" path="res://Extras/WhatsApp Audio 2026-04-10 at 10.53.15.mp3" id="6_11jtl"]
 [ext_resource type="FontFile" uid="uid://8snmw24doosa" path="res://Player/Minecrafter-MA3Dw.ttf" id="8_donj0"]
 [ext_resource type="Script" uid="uid://coimhnpp4n2ch" path="res://label.gd" id="9_hpglo"]
-[ext_resource type="Texture2D" uid="uid://w4q0k82sygr6" path="res://Extras/Progress_bar.png" id="10_hpglo"]
+[ext_resource type="Texture2D" uid="uid://c4xugekk7whea" path="res://Enviroment/backgrounds/Platform.png" id="10_77tfw"]
 [ext_resource type="PackedScene" uid="uid://dojqept2dxvpx" path="res://Tscn/draw.tscn" id="11_t5rjf"]
+[ext_resource type="PackedScene" uid="uid://cp6hjc7qq2dau" path="res://terrain.tscn" id="12_3jbrt"]
 [ext_resource type="PackedScene" uid="uid://dj2hjd21vcm6t" path="res://damage.tscn" id="12_77tfw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5rjf"]
-size = Vector2(157, 22)
-
 [sub_resource type="Animation" id="Animation_hpglo"]
-length = 5.0
-loop_mode = 2
+length = 6.0333333
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -26,10 +23,10 @@ tracks/0/path = NodePath("AnimatableBody2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.033333335, 2.4666667, 5),
-"transitions": PackedFloat32Array(1, 1, 1),
+"times": PackedFloat32Array(0.033333335, 1.3333334, 3.5333333, 6.0333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(6427, 650), Vector2(7181, 650), Vector2(6434, 650)]
+"values": [Vector2(6427, 650), Vector2(6441, 650), Vector2(7181, 650), Vector2(6434, 650)]
 }
 
 [sub_resource type="Animation" id="Animation_t5rjf"]
@@ -60,11 +57,8 @@ script = ExtResource("1_eawnh")
 
 [node name="Backgorund" parent="." unique_id=144487816 instance=ExtResource("1_2ha8l")]
 
-[node name="level" parent="." unique_id=341777473 instance=ExtResource("2_11jtl")]
-position = Vector2(-41, -29)
-
 [node name="Rover" parent="." unique_id=1229251134 instance=ExtResource("3_eawnh")]
-position = Vector2(113, 128)
+position = Vector2(113, -48)
 
 [node name="Camera2D" type="Camera2D" parent="Rover" unique_id=1801062252]
 position = Vector2(480, 489)
@@ -122,16 +116,16 @@ text = "Collect all the Data
 script = ExtResource("9_hpglo")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1845937083]
-position = Vector2(6427, 650)
+position = Vector2(6434, 650)
 
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=1448127575]
-position = Vector2(45, 9)
-scale = Vector2(2.453125, 2.453125)
-texture = ExtResource("10_hpglo")
+texture_filter = 1
+position = Vector2(68.3506, -9.649515)
+scale = Vector2(3.1828315, 2.4328277)
+texture = ExtResource("10_77tfw")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=2066014191]
-position = Vector2(44.5, -1.000061)
-shape = SubResource("RectangleShape2D_t5rjf")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AnimatableBody2D" unique_id=601092888]
+polygon = PackedVector2Array(-21, -14, 11, -14, 11, -11, 18, -11, 18, -9, 77, -9, 77, -11, 116, -11, 134.20117, -11, 160.20117, -11, 163.20117, -6, 167.20117, -3, 167.20117, 12, 164.20117, 15, 157.20117, 15, 114, 15, 114, 18, 47, 18, 47, 21, 15, 21, 15, 18, -14, 18, -14, 15, -18, 15, -18, 12, -21, 13, -21, 10, -23, 10, -23, -7, -21, -7)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1292518673]
 libraries/ = SubResource("AnimationLibrary_77tfw")
@@ -175,5 +169,8 @@ position = Vector2(7158, 911)
 
 [node name="damage11" parent="Node2" unique_id=256626945 instance=ExtResource("12_77tfw")]
 position = Vector2(7165, 867)
+
+[node name="Terrain" parent="." unique_id=1229517302 instance=ExtResource("12_3jbrt")]
+position = Vector2(9, 173)
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
